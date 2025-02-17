@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafadzwa Tandi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-bottom: 5px solid #0056b3;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700; /* Gold */
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin: 0;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .skills, .projects, .education, .languages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: #eef;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .active-card {
+            margin: 15px;
+            transform: scale(1.05);
+            z-index: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 1.1em;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .contact-item:hover {
+            transform: scale(1.05);
+            color: #0056b3; /* Darker blue on hover */
+        }
+        .contact-item i {
+            margin-right: 10px;
+            color: #007BFF;
+            font-size: 1.5em;
+        }
+        .contact-link {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tafadzwa Tandi</h1>
+    <p>Computer Engineer | Hardware Design | Quantum Computing | High-Performance Computing</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate computer engineer specializing in hardware design, quantum computing, and high-performance computing. With a solid foundation in programming and a keen interest in emerging technologies, I strive to create innovative solutions that push the boundaries of what's possible.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card" onclick="activateCard(this)">Hardware Design</div>
+        <div class="card" onclick="activateCard(this)">Quantum Computing</div>
+        <div class="card" onclick="activateCard(this)">High-Performance Computing</div>
+        <div class="card" onclick="activateCard(this)">JavaScript</div>
+        <div class="card" onclick="activateCard(this)">Python</div>
+        <div class="card" onclick="activateCard(this)">C++</div>
+        <div class="card" onclick="activateCard(this)">C</div>
+        <div class="card" onclick="activateCard(this)">Assembly</div>
+        <div class="card" onclick="activateCard(this)">Quasm</div>
+        <div class="card" onclick="activateCard(this)">HTML & CSS</div>
+        <div class="card" onclick="activateCard(this)">Django Framework</div>
+        <div class="card" onclick="activateCard(this)">React JS</div>
+        <div class="card" onclick="activateCard(this)">Node.js</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>ZWLANG.zwl</h3>
+            <p>A new programming language aiming to revolutionize the world of robotics, AI, classical computing, and quantum computing.</p>
+        </div>
+        <div class="card">
+            <h3>Tafadzwa OS</h3>
+            <p>A new Operating System which is going to be cross-platform in a few years to come.</p>
+        </div>
+        <div class="card">
+            <h3>All in One Desktop</h3>
+            <p>A $200 All-in-One Desktop computer aimed at ensuring every school in Zimbabwe and every household gets an affordable PC.</p>
+        </div>
+        <div class="card">
+            <h3>Quantum Circuit Simulator</h3>
+            <p>A web-based application that simulates quantum circuits and provides real-time feedback on quantum states.</p>
+        </div>
+        <div class="card">
+            <h3>Smart Home Hardware System</h3>
+            <p>Designed and implemented a smart home automation system using microcontrollers and IoT technologies.</p>
+        </div>
+        <div class="card">
+            <h3>High-Performance Computing Cluster</h3>
+            <p>Developed a scalable HPC cluster for data-intensive applications, optimizing performance and resource allocation.</p>
+        </div>
+        <div class="card">
+            <h3>Quantum Algorithm Explorer</h3>
+            <p>An interactive platform that allows users to explore and visualize various quantum algorithms.</p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="education">
+        
+        <div class="card">
+            <h3>Bachelor of Science in Computer Engineering</h3>
+            <p>University of Zimbabwe, Year of Graduation: 2027 (Expected)</p>
+        </div>
+    </div>
+</section>
+
+<section id="languages">
+    <h2>Languages</h2>
+    <div class="languages">
+        <div class="card">English</div>
+        <div class="card">French</div>
+        <div class="card">Mandarin</div>
+        <div class="card">Russian</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p><a class="contact-link" href="#">tafadzwaZ@pi20</a></p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p><a class="contact-link" href="tel:+263774214238">+263774214238</a></p>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <p><a class="contact-link" href="#" target="_blank">tafadzwatandiZ</a></p>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <p><a class="contact-link" href="#" target="_blank">tafadzwatandiZ</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Tafadzwa Tandi</p>
+</footer>
+
+<script>
+    function activateCard(card) {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(c => c.classList.remove('active-card'));
+        card.classList.add('active-card');
+    }
+
+    document.getElementById('email').addEventListener('click', function() {
+        alert('Email: tafadzwatandi27@gmail.com');
+    });
+</script>
+
+</body>
+</html>
